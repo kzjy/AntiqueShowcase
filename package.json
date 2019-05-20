@@ -8,11 +8,9 @@
     "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
     "react-id-swiper": "^2.1.2",
-    "react-image-gallery": "^0.8.16",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
-    "swiper": "^4.5.0",
-    "webpack": "^4.32.0"
+    "swiper": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

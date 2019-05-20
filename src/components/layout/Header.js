@@ -1,5 +1,5 @@
 import React from 'react'
-import headerDesign from '../../images/headerCropped.png';
+import headerDesign from '../../images/headerNew.PNG';
 
 export default function Header() {
   return (
