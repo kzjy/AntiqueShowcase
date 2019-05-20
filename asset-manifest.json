@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AntiqueShowcase/static/css/main.76d30ae3.chunk.css",
+    "main.js": "/AntiqueShowcase/static/js/main.84e756d9.chunk.js",
+    "main.js.map": "/AntiqueShowcase/static/js/main.84e756d9.chunk.js.map",
+    "runtime~main.js": "/AntiqueShowcase/static/js/runtime~main.b3981a41.js",
+    "runtime~main.js.map": "/AntiqueShowcase/static/js/runtime~main.b3981a41.js.map",
+    "static/js/2.6a4d10eb.chunk.js": "/AntiqueShowcase/static/js/2.6a4d10eb.chunk.js",
+    "static/js/2.6a4d10eb.chunk.js.map": "/AntiqueShowcase/static/js/2.6a4d10eb.chunk.js.map",
+    "index.html": "/AntiqueShowcase/index.html",
+    "precache-manifest.37dc53795b44706287d37ab0b70afccb.js": "/AntiqueShowcase/precache-manifest.37dc53795b44706287d37ab0b70afccb.js",
+    "service-worker.js": "/AntiqueShowcase/service-worker.js",
+    "static/css/main.76d30ae3.chunk.css.map": "/AntiqueShowcase/static/css/main.76d30ae3.chunk.css.map",
+    "static/media/avatar.png": "/AntiqueShowcase/static/media/avatar.63931b43.png",
+    "static/media/App.css": "/AntiqueShowcase/static/media/background.fcca7afa.jpg",
+    "static/media/headerNew.PNG": "/AntiqueShowcase/static/media/headerNew.825dc470.PNG",
+    "static/media/showcase1.jpeg": "/AntiqueShowcase/static/media/showcase1.c7b8994a.jpeg",
+    "static/media/showcase2.jpeg": "/AntiqueShowcase/static/media/showcase2.d652acaa.jpeg",
+    "static/media/showcase3.jpeg": "/AntiqueShowcase/static/media/showcase3.b08a6097.jpeg",
+    "static/media/showcase4.jpeg": "/AntiqueShowcase/static/media/showcase4.b1944a04.jpeg",
+    "static/media/showcase5.jpeg": "/AntiqueShowcase/static/media/showcase5.4afddb78.jpeg",
+    "static/media/showcase6.jpeg": "/AntiqueShowcase/static/media/showcase6.d85f21f1.jpeg",
+    "static/media/showcase7.jpeg": "/AntiqueShowcase/static/media/showcase7.9a108f40.jpeg",
+    "static/media/showcase8.jpeg": "/AntiqueShowcase/static/media/showcase8.bce639ab.jpeg",
+    "static/media/showcase9.jpeg": "/AntiqueShowcase/static/media/showcase9.909232a0.jpeg"
+  }
+}
