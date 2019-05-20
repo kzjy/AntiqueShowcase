@@ -11,7 +11,7 @@ export default function Header() {
 }
 
 const headerStyle = {
-  marginTop: '50px',
+  marginTop: '100px',
   textAlign: 'center',
   position: 'relative',
 }

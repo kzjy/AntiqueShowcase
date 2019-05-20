@@ -1,38 +1,17 @@
 import React, {Component} from 'react'
-import {push as RevealMenu}  from 'react-burger-menu';
+import {reveal as  RevealMenu}  from 'react-burger-menu';
 import {Link} from 'react-router-dom';
 import Radium from 'radium';
+import Avatar from './Avatar';
 
 let RadiumLink = Radium(Link);
 
 class Menu extends Component {
+
     state = {
         windowWidth: window.innerWidth,
-        // menuOpen: false,
+        menuOpen: false,
     }
-
-    // state = {
-    //     menuOpen: false,
-    //   }
-    
-    //   // This keeps your state in sync with the opening/closing of the menu
-    //   // via the default means, e.g. clicking the X, pressing the ESC key etc.
-    //   handleStateChange (state) {
-    //     this.setState({menuOpen: state.isOpen})  
-    //   }
-      
-    //   // This can be used to close the menu, e.g. when a user clicks a menu item
-    //   closeMenu () {
-    //     this.setState({menuOpen: false})
-    //   }
-    
-      // This can be used to toggle the menu, e.g. when using a custom icon
-      // Tip: You probably want to hide either/both default icons if using a custom icon
-      // See https://github.com/negomi/react-burger-menu#custom-icons
-    //   toggleMenu () {
-    //     this.setState(state => ({menuOpen: !state.menuOpen}))
-    //   }
-    
 
     componentDidMount() {
         window.addEventListener("resize", this.updateDimension.bind(this));
@@ -57,7 +36,7 @@ class Menu extends Component {
             },
             bmMenu: {
               background: '#ffffff',
-              padding: '40% 1.75em 0',
+              padding: '10% 1.75em 0',
               height: '100%'
             },
             bmItemList: {
@@ -71,33 +50,46 @@ class Menu extends Component {
         if (this.state.windowWidth <= 900) {
             styles.bmBurgerButton = {
                 position: 'absolute',
-                width: '30px',
-                height: '25px',
-                left: '10px',
-                top: '12px'
+                width: '33px',
+                height: '27px',
+                left: '15px',
+                top: '16px'
             }
         }
         return styles;
     }
+    
+      handleStateChange = (state) => {
+        console.log(this.state.menuOpen)
+        this.setState({menuOpen: state.isOpen})  
+      }
+    
+      closeMenu = (e) => {
+        this.setState({menuOpen: false});
+      }
 
     render() {
+        
         var styles = this.getMenuStyle();
         return (
-            <RevealMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} styles={styles}>
-                <RadiumLink className="menu-item" to="/">
-                    <i class="fas fa-home"></i>  {"  "}
+            <RevealMenu onStateChange={(state) => this.handleStateChange(state)} isOpen={this.state.menuOpen} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} styles={styles}>
+                <Avatar/>
+                <div style={{height:'0.2em', margin: '10px 0px', backgroundColor: '#e5e5e5'}}/>
+                <h1 style={{fontSize: '2em', color: '#838383'}}>Menu</h1>
+                <RadiumLink onClick={this.closeMenu}   className="menu-item" to="/">
+                    <i className="fas fa-home"></i>  {"  "}
                     首页 | Home                
                 </RadiumLink>
-                <RadiumLink className="menu-item" to="/gallery">
-                    <i class="fas fa-image"></i> {"  "} 
+                <RadiumLink onClick={this.closeMenu}     className="menu-item" to="/gallery">
+                    <i className="fas fa-image"></i> {"  "} 
                     收藏 | Gallery
                 </RadiumLink>
-                <RadiumLink  className="menu-item" to="/about">
-                    <i class="fas fa-address-card"></i> {"  "} 
+                <RadiumLink onClick={this.closeMenu}    className="menu-item" to="/about">
+                    <i className="fas fa-address-card"></i> {"  "} 
                     关于 | About
                 </RadiumLink>
-                <RadiumLink className="menu-item" to="/contact">
-                    <i class="fas fa-phone"></i> {"  "} 
+                <RadiumLink onClick={this.closeMenu}    className="menu-item" to="/contact">
+                    <i className="fas fa-phone"></i> {"  "} 
                     联系 | Contact
                 </RadiumLink> 
             </RevealMenu>

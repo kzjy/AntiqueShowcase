@@ -24,17 +24,13 @@ body {
 
 .container {
   width: 80%;
-  margin: 0% 10%;
+  margin: 70px 10%;
 }
 
-.noSelect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+*:focus {
+  outline: 0;
+  outline: none;
+  }
 
 .menu-item {
   display: block;
@@ -45,13 +41,6 @@ body {
   height: 60px;
   text-decoration: none;
   padding-top: 20px;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .bm-menu-item {
@@ -82,9 +71,14 @@ a:active {
     left: 0px;
     top: 0px;
     position: fixed;
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     border: 20%;
+  }
+
+  .container {
+    width: 90%;
+    margin: 70px 5%;
   }
 }
