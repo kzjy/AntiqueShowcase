@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div style={headerStyle}>
       <img style={imgStyle} src={headerDesign} alt=""></img>
-      <i style={{display: 'block'}}>我是一个收藏家</i>
+      <i style={{display: 'block', marginTop: '5%'}}>这里加一些字</i>
     </div>
   )
 }

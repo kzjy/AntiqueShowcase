@@ -65,6 +65,23 @@ a:active {
   text-decoration: none;
 }
 
+.swiper-slide {
+  width: 300px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  height: 100px;
+  width: 42px;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: #bebebe62;
+}
+
+.swiper-container {
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 900px) {
 
   .MenuWrap {
@@ -73,8 +90,9 @@ a:active {
     position: fixed;
     height: 60px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.979);
     border: 20%;
+    z-index: 21;
   }
 
   .container {

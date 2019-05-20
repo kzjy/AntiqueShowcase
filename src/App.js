@@ -6,6 +6,7 @@ import Gallery from './components/Gallery';
 import Menu from './components/layout/Menu';
 import About from './components/About';
 import Contact from './components/Contact'
+import Home from './components/Home';
 
 class App extends React.Component {
 
@@ -25,6 +26,7 @@ class App extends React.Component {
               <Route exact path ="/" render={props => (
                 <React.Fragment>
                   <Header/>
+                  <Home/>
                 </React.Fragment>
               )}/>
               <Route path="/gallery" component={Gallery}/>
