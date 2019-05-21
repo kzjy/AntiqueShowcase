@@ -22,6 +22,10 @@ class Menu extends Component {
         this.setState({windowWidth: window.innerWidth})
     }
 
+    getMenuWidth() {
+        return (this.state.windowWidth <= 900) ? 250: 300;
+    }
+
     getMenuStyle() {
         var styles = {
             bmBurgerButton: {
@@ -54,7 +58,11 @@ class Menu extends Component {
                 height: '27px',
                 left: '15px',
                 top: '16px'
-            }
+            };
+            styles.bmMenu = {
+                background: '#ffffff',
+                padding: '10%',
+            };
         }
         return styles;
     }
@@ -69,13 +77,13 @@ class Menu extends Component {
       }
 
     render() {
-        
+        var menuWidth = this.getMenuWidth();
         var styles = this.getMenuStyle();
         return (
-            <RevealMenu onStateChange={(state) => this.handleStateChange(state)} isOpen={this.state.menuOpen} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} styles={styles}>
+            <RevealMenu  width={menuWidth} onStateChange={(state) => this.handleStateChange(state)} isOpen={this.state.menuOpen} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} styles={styles}>
                 <Avatar/>
                 <div style={{height:'0.2em', margin: '10px 0px', backgroundColor: '#e5e5e5'}}/>
-                <h1 style={{fontSize: '2em', color: '#838383'}}>Menu</h1>
+                <h1 style={{fontSize: '1.8em', color: '#525252', margin: "10px 0 10px 10px "}}>菜单 | Menu</h1>
                 <RadiumLink onClick={this.closeMenu}   className="menu-item" to="/">
                     <i className="fas fa-home"></i>  {"  "}
                     首页 | Home                

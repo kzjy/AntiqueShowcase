@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h1>About</h1>
+                <h1>关于 | About</h1>
                 <div style={{height: '800px'}}>
 
                 </div>

@@ -11,12 +11,12 @@ body {
 }
 
 .background {
-  background-image: url('./images/background.jpg');
+  background-image: url('./resources/background.jpg');
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1;
-  filter: blur(20px);
+  filter: blur(1px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,7 @@ body {
 .container {
   width: 80%;
   margin: 70px 10%;
+  padding-top: 20px;
 }
 
 *:focus {
@@ -34,35 +35,43 @@ body {
 
 .menu-item {
   display: block;
-  padding: auto;
   text-align: left;
   font-size: 1.5em;
   background-color: white;
   height: 60px;
   text-decoration: none;
-  padding-top: 20px;
+  padding: 10px 0px;
 }
 
 .bm-menu-item {
   background-color: #9e9e9e;
 }
 
-a:link{
+a {
+  color:  #525252;
   text-decoration: none;
+}
+
+a:link{
+  padding-left: 10px;
+  text-decoration: none;
+  color:  #525252;
 }
 
 a:visited {
   text-decoration: none;
-  color:  #838383;
+  color:  #525252;
 }
 
 a:hover {
   text-decoration: none;
-  color: #141414;
+  color: #0f0f0f;
+  /* background-color: #d3d3d3; */
 }
 
 a:active {
   text-decoration: none;
+  color:  #525252;
 }
 
 .swiper-slide {
@@ -79,8 +88,21 @@ a:active {
 }
 
 .swiper-container {
-  margin-top: 5%;
+  margin-top: 20px;
 }
+
+.header-quote {
+  font-size: 1.9em;
+}
+
+.header-quote-break-one {
+  display: inline;
+}
+
+.header-quote-break-two {
+  display: block;
+}
+
 
 @media screen and (max-width: 900px) {
 
@@ -97,6 +119,22 @@ a:active {
 
   .container {
     width: 90%;
-    margin: 70px 5%;
+    margin: 70px 15px;
+  }
+
+  .menu-item {
+    font-size: 1.3em;
+  }
+
+  .header-quote {
+    font-size: 1.2em;
+  }
+
+  .header-quote-break-one {
+    display: block;
+  }
+
+  .header-quote-break-two {
+    display: inline;
   }
 }

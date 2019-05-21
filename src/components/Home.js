@@ -34,7 +34,7 @@ class Home extends Component {
 
         let images = [];
         for (var i = 1; i < 10; i++) {
-            images.push(require('../images/home/showcase' + i + '.jpeg'));
+            images.push(require('../resources/home/showcase' + i + '.jpeg'));
         }
 
         return (
