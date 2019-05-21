@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -119,7 +123,7 @@ a:active {
 
   .container {
     width: 90%;
-    margin: 70px 15px;
+    margin: 70px auto;
   }
 
   .menu-item {
