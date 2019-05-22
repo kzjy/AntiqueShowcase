@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "info": "some info special 1",
+        "type": "special"
+    },
+    {
+        "id": 2,
+        "info": "some info special 2",
+        "type": "special"
+    },
+    {
+        "id": 3,
+        "info": "some info special 3",
+        "type": "special"
+    },
+    {
+        "id": 4,
+        "info": "some info special 4",
+        "type": "special"
+    },
+    {
+        "id": 5,
+        "info": "some info special 5",
+        "type": "special"
+    },
+    {
+        "id": 6,
+        "info": "some info special 6",
+        "type": "special"
+    },
+    {
+        "id": 7,
+        "info": "some info special 7",
+        "type": "special"
+    },
+    {
+        "id": 8,
+        "info": "some info special 8",
+        "type": "special"
+    },
+    {
+        "id": 9,
+        "info": "some info special 9",
+        "type": "special"
+    }
+]

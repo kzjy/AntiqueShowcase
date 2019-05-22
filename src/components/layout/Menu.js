@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {reveal as  RevealMenu}  from 'react-burger-menu';
+import {slide as  RevealMenu}  from 'react-burger-menu';
 import {Link} from 'react-router-dom';
 import Radium from 'radium';
 import Avatar from './Avatar';
@@ -68,7 +68,6 @@ class Menu extends Component {
     }
     
       handleStateChange = (state) => {
-        console.log(this.state.menuOpen)
         this.setState({menuOpen: state.isOpen})  
       }
     

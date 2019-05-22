@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "info": "some info statue 1",
+        "type": "statue"
+    },
+    {
+        "id": 2,
+        "info": "some info statue 2",
+        "type": "statue"
+    },
+    {
+        "id": 3,
+        "info": "some info statue 3",
+        "type": "statue"
+    },
+    {
+        "id": 4,
+        "info": "some info statue 4",
+        "type": "statue"
+    },
+    {
+        "id": 5,
+        "info": "some info statue 5",
+        "type": "statue"
+    }
+]

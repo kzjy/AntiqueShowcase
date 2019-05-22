@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "info": "some info gramophone 1",
+        "type": "gramophone"
+    },
+    {
+        "id": 2,
+        "info": "some info gramophone 2",
+        "type": "gramophone"
+    },
+    {
+        "id": 3,
+        "info": "some info gramophone 3",
+        "type": "gramophone"
+    },
+    {
+        "id": 4,
+        "info": "some info gramophone 4",
+        "type": "gramophone"
+    },
+    {
+        "id": 5,
+        "info": "some info gramophone 5",
+        "type": "gramophone"
+    }
+
+]

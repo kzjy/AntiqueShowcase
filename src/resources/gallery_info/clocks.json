@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "info": "some info for clock 1",
+        "type": "clock"
+    },
+    {
+        "id": 2,
+        "info": "some info for clock 2",
+        "type": "clock"
+    },
+    {
+        "id": 3,
+        "info": "some info for clock 3",
+        "type": "clock"
+    },
+    {
+        "id": 4,
+        "info": "some info for clock 4",
+        "type": "clock"
+    },
+    {
+        "id": 5,
+        "info": "some info for clock 5",
+        "type": "clock"
+    },
+    {
+        "id": 6,
+        "info": "some info for clock 6",
+        "type": "clock"
+    },
+    {
+        "id": 7,
+        "info": "some info for clock 7",
+        "type": "clock"
+    },
+    {
+        "id": 8,
+        "info": "some info for clock 8",
+        "type": "clock"
+    },
+    {
+        "id": 9,
+        "info": "some info for clock 9",
+        "type": "clock"
+    },
+    {
+        "id": 10,
+        "info": "some info for clock 10",
+        "type": "clock"
+    },
+    {
+        "id": 11,
+        "info": "some info for clock 11",
+        "type": "clock"
+    }
+]

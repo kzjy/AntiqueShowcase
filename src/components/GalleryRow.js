@@ -8,11 +8,13 @@ class GalleryRow extends Component {
 
     getCollectionFromFolder() {
         let collection = [];
-        for (var i = 1; i < this.props.quantity; i++) {
+        let info = require('../resources/gallery_info/' + this.props.collectionFolder + '.json');
+        for (var i = 0; i < this.props.quantity; i++) {
             collection.push({
+                "id": info[i].id,
                 "img": require('../resources/gallery/' + this.props.collectionFolder + '/' + 
-                    this.props.type + i + '.jpeg'),
-                "info": "这里添加一些描述",
+                    this.props.type + ' (' +(i + 1) + ').jpeg'),
+                "info": info[i].info,
             });
         }
         return collection;
@@ -21,17 +23,19 @@ class GalleryRow extends Component {
     render() {
         var params = {
             modules: [Pagination, Navigation],
-                pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-                },
-                navigation: {
-                nextEl: '.swiper-button-next.swiper-button-white',
-                prevEl: '.swiper-button-prev.swiper-button-white'
-                },
-                spaceBetween: 30
-            
+            // centeredSlides: true,
+            slidesPerView: 'auto',
+            // loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+            },
+            navigation: {
+            nextEl: '.swiper-button-next.swiper-button-white',
+            prevEl: '.swiper-button-prev.swiper-button-white'
+            },
+            spaceBetween: 30
         };
 
         let collection = this.getCollectionFromFolder();
@@ -39,9 +43,9 @@ class GalleryRow extends Component {
             <div style={{padding: ''}}>
                 <div style={{width: '100%', height: '1px', backgroundColor: '#a3a3a3', margin: '30px 0 10px 0'}}/>
                 <h2>{this.props.title}</h2>
-                <Swiper slidesPerView='auto' {...params}>
+                <Swiper {...params}>
                     {collection.map((item) => {
-                        return <GalleryItem info={item.info} picture={item.img}/>
+                        return <GalleryItem key={item.id} info={item.info} picture={item.img}/>
                     })}
                 </Swiper>
 
