@@ -21,7 +21,7 @@ class Gallery extends Component {
                 <GalleryRow title="古钟 | Clocks" type="clock" collectionFolder="clocks" quantity="11" />
                 <GalleryRow title="留声机 | Gramophones" type="gramophone" collectionFolder="gramophones" quantity="5"/>
                 <GalleryRow title="铜像 | Statue" type="statue" collectionFolder="statues" quantity="5"/>
-                
+                <GalleryRow title="玉器 | Jade" type="jade" collectionFolder="jade" quantity="23"/>
                 </InfiniteScroll>
                 
             </div>

@@ -2,15 +2,11 @@ import React, {Component} from 'react';
 
 class GalleryItem extends Component {
 
-    shouldComponentUpdate() {
-        return false;
-    }
-
     render() {
         return (
             <div className="swiper-slide" style={{position: 'relative'}}>
-                <img style={{height: '500px', width: 'auto', marginBottom: '20px'}}
-                src={this.props.picture} alt=""/>
+                <img style={{height:'500px', width:'auto', marginBottom: '20px'}}
+                src={this.props.picture} alt="" />
                 <p style={labelStyle}>{this.props.info}</p>
                 <div></div>
             </div>

@@ -13,7 +13,7 @@ class GalleryRow extends Component {
             collection.push({
                 "id": info[i].id,
                 "img": require('../resources/gallery/' + this.props.collectionFolder + '/' + 
-                    this.props.type + ' (' +(i + 1) + ').jpeg'),
+                    this.props.type + (i + 1) + '.jpeg'),
                 "info": info[i].info,
             });
         }
